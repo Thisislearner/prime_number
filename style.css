@@ -21,3 +21,17 @@ body {
   background-size: fill;
   position: relative;
 }
+
+.heading_main {
+  padding: 50px;
+}
+
+.parent_container {
+  width: 326px;
+  height: 414px;
+  background-color: var(--filling_green);
+  border-radius: var(--border_radius);
+  border: 4px solid var(--primary_green);
+  position: absolute;
+  transform: translate(40vw, 1vh);
+}
