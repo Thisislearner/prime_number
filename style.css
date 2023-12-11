@@ -59,6 +59,7 @@ body {
   background-color: var(--filling_green_dark);
   border: 4px solid var(--primary_green);
   border-radius: var(--border_radius);
+  box-shadow: 4px 4px var(--primary_green);
 }
 
 input::placeholder {
@@ -79,6 +80,18 @@ input::placeholder {
   margin-bottom: 20px;
   border-radius: var(--border_radius);
   text-transform: uppercase;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.42);
+  transition: all 100ms linear;
+}
+
+.btn_animation:hover {
+  transform: translate(-1px, -2px);
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.42);
+}
+
+.btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.52);
 }
 
 .submit {
@@ -87,4 +100,31 @@ input::placeholder {
 
 .reset {
   background-color: #a4fff6;
+}
+
+.warning {
+  animation: warning 200ms linear;
+}
+
+@keyframes warning {
+  0% {
+    background-color: red;
+  }
+
+  20% {
+    background: white;
+  }
+
+  40% {
+    background-color: red;
+  }
+  60% {
+    background: white;
+  }
+  80% {
+    background: red;
+  }
+  100% {
+    background: white;
+  }
 }
